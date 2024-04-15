@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.navegacion {
+  border-bottom: 1px solid #212429;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navegacion,
+.menu,
+.iconos {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #212429;
+  padding: 20px;
+}
+.hamburguesa {
+  display: flex;
+  margin-left: 50px;
+}
+.menu {
+  gap: 80px;
+  font-family: "Montserrat", Regular;
+  font-size: 16px;
+}
+.iconos {
+  gap: 50px;
+  margin-right: 60px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat", Regular;
+  background-color: #212429;
+  color: #ffffff;
+  height: 150px;
+  width: 100%;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer > div {
+  margin-left: 30px;
+}
+footer > div {
+  margin-right: 70px;
+}
+footer p,
+.circulo,
+.iconos,
+.menu,
+.hamburguesa,
+.grid-item img,
+.informacion:hover {
+  cursor: pointer;
+}
+
+.menu p:hover,
+.grid-item img:hover {
+  transform: scale(1.1);
+}
+
+.circulo {
+  background-color: #ffffff;
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+  height: 40px;
+}
+
+.header {
+  margin-top: 120px;
+  margin-left: 50px;
+  font-family: "Montserrat";
+  color: #212429;
+  font-size: 32px;
+  padding: 20px;
+}
+
+.grid-contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  place-items: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.container {
+  min-height: calc(100% - 150px);
+}
+.grid-item img {
+  border-radius: 20px;
+}
+
+.informacion {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+.informacion :last-child {
+  font-weight: 700;
+}
+
+@media (max-width: 920px) {
+  .grid-contenido {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-contenido {
+    grid-template-columns: 100%;
+  }
+  .menu,
+  .iconos {
+    display: none;
+  }
+  .navegacion {
+    justify-content: center;
+  }
+  .hamburguesa {
+    margin-left: 0px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+  footer > div {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    font-weight: 700;
+  }
+  footer > div {
+    margin-right: 30px;
+  }
+  footer > div:last-child {
+    margin-bottom: 0px;
+  }
+  .circulo {
+    width: 40px;
+    height: 40px;
+  }
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
+}
